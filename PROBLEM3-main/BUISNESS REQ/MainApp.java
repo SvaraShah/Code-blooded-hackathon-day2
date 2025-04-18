@@ -4,7 +4,7 @@ import util.ReadData;
 
 public class MainApp {
     public static void main(String[] args) {
-        SterlingDAO dao = new SterlingDAO();
+        SterlingDAO sterlingDAO = new SterlingDAO();
 
         while (true) {
             System.out.println("\n=======================================");
@@ -17,14 +17,14 @@ public class MainApp {
             System.out.println("5. Invoice Generation");
             System.out.println("6. Exit");
 
-            int choice = Integer.parseInt(ReadData.acceptString("Enter your choice: "));
+            int userChoice = Integer.parseInt(ReadData.acceptString("Enter your choice: "));
 
-            switch (choice) {
-                case 1 -> CustomerTester.readCustomerInfo(dao);
-                case 2 -> OrderTester.readOrderInfo(dao);
-                case 3 -> DistributionTester.readDistributionListInfo(dao);
-                case 4 -> DeliveryTester.readDeliveryInfo(dao);
-                case 5 -> InvoiceTester.readInvoiceInfo(dao);
+            switch (userChoice) {
+                case 1 -> CustomerTester.readCustomerInfo(sterlingDAO);
+                case 2 -> OrderTester.readOrderInfo(sterlingDAO);
+                case 3 -> DistributionTester.readDistributionListInfo(sterlingDAO);
+                case 4 -> DeliveryTester.readDeliveryInfo(sterlingDAO);
+                case 5 -> InvoiceTester.readInvoiceInfo(sterlingDAO);
                 case 6 -> {
                     System.out.println("Thank you! Exiting...");
                     return;
