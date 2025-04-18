@@ -7,3 +7,4 @@ public class Distribution {
         this.dateOfDistribution = dateOfDistribution;
     }
 }
+ 
