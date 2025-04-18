@@ -1,15 +1,15 @@
 package model;
 
 public class Invoice {
-    private String customerId;
-    private int invoiceMonth;
-    private int invoiceYear;
-    private String description;
+    private String linkedCustomerId;
+    private int billingMonth;
+    private int billingYear;
+    private String invoiceDescription;
 
-    public Invoice(String customerId, int invoiceMonth, int invoiceYear, String description) {
-        this.customerId = customerId;
-        this.invoiceMonth = invoiceMonth;
-        this.invoiceYear = invoiceYear;
-        this.description = description;
+    public Invoice(String linkedCustomerId, int billingMonth, int billingYear, String invoiceDescription) {
+        this.linkedCustomerId = linkedCustomerId;
+        this.billingMonth = billingMonth;
+        this.billingYear = billingYear;
+        this.invoiceDescription = invoiceDescription;
     }
 }
