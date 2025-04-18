@@ -1,9 +1,9 @@
 package model;
 
 public class Distribution {
-    private String distributionDate;
+    private String dateOfDistribution;
 
-    public Distribution(String distributionDate) {
-        this.distributionDate = distributionDate;
+    public Distribution(String dateOfDistribution) {
+        this.dateOfDistribution = dateOfDistribution;
     }
 }
