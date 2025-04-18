@@ -6,13 +6,14 @@ import util.ReadData;
 
 public class CustomerTester {
     public static void readCustomerInfo(SterlingDAO dao) {
-        String name = ReadData.acceptString("Customer Name: ");
-        String regDate = ReadData.acceptString("Date Of Registration(DD-MMM-YYYY): ");
-        String address = ReadData.acceptString("Address: ");
-        String city = ReadData.acceptString("City: ");
-        String pin = ReadData.acceptString("Pin: ");
-        String phone = ReadData.acceptString("Telephone Number: ");
-        String email = ReadData.acceptString("E-mail Id: ");
-        dao.saveCustomer(new Customer(name, regDate, address, city, pin, phone, email));
+        String customerName = ReadData.acceptString("Customer Name: ");
+        String registrationDate = ReadData.acceptString("Date Of Registration(DD-MMM-YYYY): ");
+        String customerAddress = ReadData.acceptString("Address: ");
+        String customerCity = ReadData.acceptString("City: ");
+        String postalCode = ReadData.acceptString("Pin: ");
+        String contactNumber = ReadData.acceptString("Telephone Number: ");
+        String emailAddress = ReadData.acceptString("E-mail Id: ");
+        
+        dao.saveCustomer(new Customer(customerName, registrationDate, customerAddress, customerCity, postalCode, contactNumber, emailAddress));
     }
 }
