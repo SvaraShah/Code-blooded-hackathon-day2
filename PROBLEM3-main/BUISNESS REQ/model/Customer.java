@@ -1,21 +1,21 @@
 package model;
 
 public class Customer {
-    private String name;
-    private String dateOfRegistration;
-    private String address;
-    private String city;
-    private String pin;
-    private String phone;
-    private String email;
+    private String customerName;
+    private String registrationDate;
+    private String customerAddress;
+    private String customerCity;
+    private String postalCode;
+    private String contactNumber;
+    private String emailAddress;
 
-    public Customer(String name, String dateOfRegistration, String address, String city, String pin, String phone, String email) {
-        this.name = name;
-        this.dateOfRegistration = dateOfRegistration;
-        this.address = address;
-        this.city = city;
-        this.pin = pin;
-        this.phone = phone;
-        this.email = email;
+    public Customer(String customerName, String registrationDate, String customerAddress, String customerCity, String postalCode, String contactNumber, String emailAddress) {
+        this.customerName = customerName;
+        this.registrationDate = registrationDate;
+        this.customerAddress = customerAddress;
+        this.customerCity = customerCity;
+        this.postalCode = postalCode;
+        this.contactNumber = contactNumber;
+        this.emailAddress = emailAddress;
     }
 }
